@@ -48,7 +48,7 @@ export default function MasterPlan() {
                   className="snap-none flex-shrink-0 object-contain rounded-[4px] h-[130px] md:h-[480px] w-auto"
                 />
                 <img
-                  src="/assets/masterplan/image.png"
+                  src="/brochure1.png"
                   alt="Master Plan Brochure - Page 2"
                   className="snap-none flex-shrink-0 object-contain rounded-[4px] h-[130px] md:h-[480px] w-auto"
                 />
