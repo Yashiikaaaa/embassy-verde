@@ -11,11 +11,11 @@ export default function PricingPlots() {
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [clickedIndex, setClickedIndex] = useState<number | null>(null)
   const plots = [
-    { price: "₹1.38 Cr+", size: "2 BHK (1150 Sq. Ft)" },
-{ price: "₹1.79 Cr+", size: "3 BHK + 2T (1500 Sq. Ft)" },
-{ price: "₹2.15 Cr+", size: "3 BHK + 3T (1800 Sq. Ft)" },
-{ price: "₹2.35 Cr+", size: "3 BHK + 3T (2000 Sq. Ft)" },
-{ price: "₹2.89 Cr+", size: "4 BHK + 4T (2400-2600 Sq. Ft)" },
+    { size: "₹1.18 Cr*", price: "3 BHK" },
+// { price: "₹1.79 Cr+", size: "3 BHK + 2T (1500 Sq. Ft)" },
+// { price: "₹2.15 Cr+", size: "3 BHK + 3T (1800 Sq. Ft)" },
+// { price: "₹2.35 Cr+", size: "3 BHK + 3T (2000 Sq. Ft)" },
+// { price: "₹2.89 Cr+", size: "4 BHK + 4T (2400-2600 Sq. Ft)" },
 
 
 
@@ -92,7 +92,7 @@ export default function PricingPlots() {
                     {plot.price}
                   </h3>
                   <p className="text-[#575556] text-base font-medium">
-                    Size : {plot.size}
+                     {plot.size}
                   </p>
                 </div>
 
