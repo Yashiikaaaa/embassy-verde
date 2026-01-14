@@ -24,6 +24,7 @@ export default function EnquiryModal({
   // initialize GA (client-side only)
   const GA_MEASUREMENT_ID =
     process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ?? "G-3J8R39GCCX";
+    console.log("GA_MEASUREMENT_ID:", GA_MEASUREMENT_ID);
   useEffect(() => {
     if (GA_MEASUREMENT_ID) {
       ReactGA.initialize(GA_MEASUREMENT_ID);
@@ -90,7 +91,7 @@ export default function EnquiryModal({
       campaign: true,
       projectId: "",
       projectName: "Embassy Verde",
-      currentAgent: "Fahad Ur Rahman",
+      currentAgent: "unknown",
       utmDetails: {
         source: utmParams.utmSource || null,
         medium: utmParams.utmMedium || null,
