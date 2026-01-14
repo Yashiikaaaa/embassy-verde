@@ -19,7 +19,7 @@ export default function EnquiryModal({
   title = "Download Brochure",
   subtitle = "Enter your name and number to download the brochure instantly",
   openedEventTitle = "contact_form_opened",
-  submitEventTitle = "contact_form_submit",
+  submitEventTitle = "Contact_form_submit",
 }: EnquiryModalProps) {
   // initialize GA (client-side only)
   const GA_MEASUREMENT_ID =
@@ -131,7 +131,7 @@ export default function EnquiryModal({
       if (GA_MEASUREMENT_ID) {
         ReactGA.event({
           category: "Conversion",
-          action: "contact_form_submit",
+          action: "Contact_form_submit",
           label: title,
           value: 1,
         });
