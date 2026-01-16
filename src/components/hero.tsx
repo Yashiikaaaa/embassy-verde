@@ -57,7 +57,7 @@ export default function Hero() {
 
           {/* Description */}
           <p className="text-[16px] md:text-lg lg:text-lg mb-8 text-gray-200 font-['Urbanist'] font-bold drop-shadow-lg">
-          
+          North Bangalore
           </p>
 
           {/* CTA Button */}
