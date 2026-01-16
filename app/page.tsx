@@ -22,7 +22,7 @@ export default function Home() {
   const pathname = usePathname()
 
   useEffect(() => {
-    const GA_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ?? "G-3J8R39GCCX"
+    const GA_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ?? "G-RSF9TJHQF4"
     if (!GA_ID) return
 
     // initialize once

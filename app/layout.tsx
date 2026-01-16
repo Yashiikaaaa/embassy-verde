@@ -4,13 +4,11 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import ToasterProvider from "@/components/ToasterProver";
 
-
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Embassy Verde",
-  description:
-    "Explore premium residential properties by Embassy",
+  description: "Explore premium residential properties by Embassy",
 };
 
 export default function RootLayout({
@@ -21,9 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        
-
-<script
+        <script
           // safe inline injection for GTM; will run only in the browser
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -33,7 +29,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','	GTM-N74J78P6');`,
           }}
         />
-        
+
         <script
           async
           src="https://www.googletagmanager.com/ns.html?id=	GTM-M69P9DFK"
@@ -48,14 +44,17 @@ gtag('config', 'G-RSF9TJHQF4');
 `,
           }}
         />
-        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
-        <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700&display=swap" rel="stylesheet"/>
-
-
+        <link
+          href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700&display=swap"
+          rel="stylesheet"
+        />
       </head>
       <body className={inter.className}>
-    
-<noscript>
+        <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=	GTM-N74J78P6"
             height="0"
@@ -63,7 +62,7 @@ gtag('config', 'G-RSF9TJHQF4');
             style={{ display: "none", visibility: "hidden" }}
           />
         </noscript>
-          <ToasterProvider />
+        <ToasterProvider />
         {children}
       </body>
     </html>
